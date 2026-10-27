@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convite de pagamento — demonstração</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#f2f6fb;color:#172b4d;margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;box-sizing:border-box}
+  main{background:#fff;max-width:440px;width:100%;padding:30px;border-radius:18px;box-shadow:0 8px 30px #17345a18;text-align:center;box-sizing:border-box}
+  .mark{font-size:38px;margin-bottom:12px} h1{font-size:24px;margin:0 0 22px} .message{font-size:19px;line-height:1.6;margin:0 0 24px;overflow-wrap:anywhere}
+  button{background:#1769e0;color:white;border:0;border-radius:10px;padding:14px 26px;font-size:17px;font-weight:700;cursor:pointer;width:100%}
+  .notice{font-size:13px;color:#5b6b82;background:#f1f5fa;padding:12px;border-radius:8px;margin-top:20px;line-height:1.45}
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true">🔒</div>
+  <h1>Convite de pagamento</h1>
+  <p class="message"><strong>Pagamento Para ROSEMEIRE DOS SANTOS GUALBERTO<br>1167736303</strong></p>
+  <button type="button" onclick="document.getElementById('status').hidden=false; this.textContent='SELECIONADO'; this.disabled=true;">ACEITAR</button>
+  <p id="status" hidden role="status">Você selecionou ACEITAR. Nenhum pagamento foi feito.</p>
+  <p class="notice">DEMONSTRAÇÃO — esta página não processa pagamentos nem confirma uma transação. Verifique os dados diretamente com o destinatário antes de pagar.</p>
+</main>
+</body>
+</html>
